@@ -13,7 +13,7 @@ Frame.Name = "Frame"
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
-Frame.Position = UDim2.new(0.470710164, 0, 0.262525052, 0)
+Frame.Position = UDim2.new(0.400710164, 0, 0.32525052, 0)
 Frame.Size = UDim2.new(0, 255, 0, 183)
 Frame.Image = "rbxassetid://3570695787"
 Frame.ImageColor3 = Color3.fromRGB(1, 1, 1)
@@ -120,3 +120,13 @@ local function WTCA_fake_script() -- Frame.LocalScript
 end
 coroutine.wrap(WTCA_fake_script)()
 end
+local func1 = function()
+	print("im good thanks for asking!")
+	game.CoreGui.ScreenGui:Destroy()
+end
+local func2 = function()
+	print("help")
+	game.CoreGui.ScreenGui:Destroy()
+end
+local ui = _G.main:new("you good?", "i think",func1, "nope",func2)
+return _G.main
