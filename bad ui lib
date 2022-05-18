@@ -120,13 +120,4 @@ local function WTCA_fake_script() -- Frame.LocalScript
 end
 coroutine.wrap(WTCA_fake_script)()
 end
-local func1 = function()
-	print("im good thanks for asking!")
-	game.CoreGui.ScreenGui:Destroy()
-end
-local func2 = function()
-	print("help")
-	game.CoreGui.ScreenGui:Destroy()
-end
-local ui = _G.main:new("you good?", "i think",func1, "nope",func2)
-return _G.main
+
