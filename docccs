@@ -1,0 +1,18 @@
+-- load this mf 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ImMejor35/bad-ui-lib-ngl/main/bad%20ui%20lib"))()
+
+--function for first answer
+local func1 = function()
+	print("im good thanks for asking!")
+	game.CoreGui.ScreenGui:Destroy()
+end
+--function for second answer
+local func2 = function()
+	print("help")
+	game.CoreGui.ScreenGui:Destroy()
+end
+-- ui shit
+local ui = _G.main:new("The question", "yes i am",func1, "no not yet",func2)
+
+
+return _G.main
