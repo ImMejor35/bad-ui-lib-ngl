@@ -1,0 +1,122 @@
+_G.main = {}
+function _G.main:new(question, answer1,call1, answer2,call2)
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_Roundify_10px = Instance.new("ImageLabel")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_Roundify_10px_2 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_Roundify_5px = Instance.new("ImageLabel")
+ScreenGui.Parent = game:WaitForChild("CoreGui")
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.470710164, 0, 0.262525052, 0)
+Frame.Size = UDim2.new(0, 255, 0, 183)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(1, 1, 1)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(25, 25, 25)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.109803922, 0, 0.72131145, 0)
+TextButton.Size = UDim2.new(0, 84, 0, 32)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.SciFi
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+	TextButton.Text = answer1
+	TextButton.MouseButton1Click:Connect(function()
+		call1()
+	end)
+
+TextButton_Roundify_10px.Name = "TextButton_Roundify_10px"
+TextButton_Roundify_10px.Parent = TextButton
+TextButton_Roundify_10px.Active = true
+TextButton_Roundify_10px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_10px.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton_Roundify_10px.BackgroundTransparency = 1.000
+TextButton_Roundify_10px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_10px.Selectable = true
+TextButton_Roundify_10px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_10px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_10px.ImageColor3 = Color3.fromRGB(25, 25, 25)
+TextButton_Roundify_10px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_10px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_10px.SliceScale = 0.100
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.533333361, 0, 0.72131145, 0)
+TextButton_2.Size = UDim2.new(0, 84, 0, 32)
+TextButton_2.ZIndex = 2
+TextButton_2.Font = Enum.Font.SciFi
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+TextButton_2.Text = answer2
+TextButton_2.MouseButton1Click:Connect(function()
+	call2()
+end)
+TextButton_Roundify_10px_2.Name = "TextButton_Roundify_10px"
+TextButton_Roundify_10px_2.Parent = TextButton_2
+TextButton_Roundify_10px_2.Active = true
+TextButton_Roundify_10px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_10px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_10px_2.BackgroundTransparency = 1.000
+TextButton_Roundify_10px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_10px_2.Selectable = true
+TextButton_Roundify_10px_2.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_10px_2.Image = "rbxassetid://3570695787"
+TextButton_Roundify_10px_2.ImageColor3 = Color3.fromRGB(25, 25, 25)
+TextButton_Roundify_10px_2.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_10px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_10px_2.SliceScale = 0.100
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.101960786, 0, 0.136612028, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 84)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = question
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_Roundify_5px.Name = "TextLabel_Roundify_5px"
+TextLabel_Roundify_5px.Parent = TextLabel
+TextLabel_Roundify_5px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_Roundify_5px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_Roundify_5px.BackgroundTransparency = 1.000
+TextLabel_Roundify_5px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_Roundify_5px.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_Roundify_5px.Image = "rbxassetid://3570695787"
+TextLabel_Roundify_5px.ImageColor3 = Color3.fromRGB(25, 25, 25)
+TextLabel_Roundify_5px.ScaleType = Enum.ScaleType.Slice
+TextLabel_Roundify_5px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextLabel_Roundify_5px.SliceScale = 0.050
+
+-- Scripts:
+
+local function WTCA_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(WTCA_fake_script)()
+end
