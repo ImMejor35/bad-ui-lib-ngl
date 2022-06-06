@@ -1,0 +1,10 @@
+local secure = {}
+secure.runscript = function(script)
+    local success, response = pcall(function()
+        loadstring(script)()
+    end)
+    if not success then
+        print("Script errored with" .. response)
+    end
+end
+return secure
