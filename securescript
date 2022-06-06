@@ -4,7 +4,7 @@ secure.runscript = function(script)
         loadstring(script)()
     end)
     if not success then
-        print("Script errored with" .. response)
+        print("Script errored with " .. response)
     end
 end
 return secure
